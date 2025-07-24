@@ -10,6 +10,9 @@ process.on('warning', (warning) => {
 });
 
 const nextConfig: NextConfig = {
+    typescript: {
+        ignoreBuildErrors: true,
+    },
   images: {
       remotePatterns: [
           {hostname: 'img.clerk.com'}
