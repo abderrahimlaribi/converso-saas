@@ -21,10 +21,7 @@ const nextConfig: NextConfig = {
           {hostname: 'img.clerk.com'}
       ]
   },
-  // Allow access from local network IPs in development
-  experimental: {
-      allowedDevOrigins: ['http://localhost:3000', 'http://192.168.100.9:3000']
-  }
+  // experimental options removed as they were causing build errors
 };
 
 export default nextConfig;
